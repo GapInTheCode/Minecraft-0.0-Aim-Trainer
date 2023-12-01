@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+#tracker {
+    background-color: rgb(74, 32, 173);
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    width: 10000px;
+    pointer-events: none; /* Make the text non-clickable */
+    user-select: none; /* Make the text non-selectable */
+}
+
+#outside-tracker {
+    background-color: #ff6666;
+    width: calc(100vw - 10000px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10000px;
+    z-index: -1;
+}
